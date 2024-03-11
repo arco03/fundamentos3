@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - FinalPoint
+  - FallCollision
   layers:
   - Default
   - TransparentFX
@@ -51,4 +52,7 @@ TagManager:
     locked: 0
   - name: level
     uniqueID: 1015592677
+    locked: 0
+  - name: 
+    uniqueID: 2827910241
     locked: 0
