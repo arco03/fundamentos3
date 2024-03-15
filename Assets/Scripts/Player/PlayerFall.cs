@@ -1,5 +1,4 @@
 using UnityEngine;
-
 public class PlayerFall : MonoBehaviour
 {
     [SerializeField] private float x, y, z;
@@ -13,7 +12,6 @@ public class PlayerFall : MonoBehaviour
             Debug.Log("Detectó la colision");
             GameOverUI.SetActive(true);
             TimeUI.SetActive(false);
-          
         }
     }
 }
