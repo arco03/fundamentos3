@@ -4384,8 +4384,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1619973573}
-        m_TargetAssemblyTypeName: Quit, Assembly-CSharp
+      - m_Target: {fileID: 936951622}
+        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
         m_MethodName: Exit
         m_Mode: 1
         m_Arguments:
@@ -9437,6 +9437,7 @@ GameObject:
   m_Component:
   - component: {fileID: 936951621}
   - component: {fileID: 936951622}
+  - component: {fileID: 936951623}
   m_Layer: 0
   m_Name: Script
   m_TagString: Untagged
@@ -9471,6 +9472,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06c19d62363a29e4d86b3aef4d4c4ac4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameOverUI: {fileID: 387193191}
+  TimeUI: {fileID: 1895640241}
+  record: {fileID: 525985283}
+  current: {fileID: 738849351}
+--- !u!114 &936951623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936951620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d689df3d592a67e4b8b652a0a1094c4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textMesh: {fileID: 1901765625}
+  timeElapsed: 0
+  minutes: 0
+  seconds: 0
+  gameOverUI: {fileID: 936951622}
 --- !u!1 &963050096
 GameObject:
   m_ObjectHideFlags: 0
@@ -14883,7 +14905,6 @@ GameObject:
   - component: {fileID: 1619973568}
   - component: {fileID: 1619973571}
   - component: {fileID: 1619973572}
-  - component: {fileID: 1619973573}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -15045,18 +15066,6 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1619973573
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1619973567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18321a2bf2d26ab4d9b6fc556bbb365e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1620641806
 GameObject:
   m_ObjectHideFlags: 0
@@ -16588,8 +16597,7 @@ MonoBehaviour:
   x: -5.44
   y: -1.52
   z: 0
-  GameOverUI: {fileID: 387193191}
-  TimeUI: {fileID: 1895640241}
+  timer: {fileID: 936951623}
 --- !u!1 &1743254338
 GameObject:
   m_ObjectHideFlags: 0
@@ -17465,7 +17473,6 @@ GameObject:
   - component: {fileID: 1901765624}
   - component: {fileID: 1901765626}
   - component: {fileID: 1901765625}
-  - component: {fileID: 1901765627}
   m_Layer: 5
   m_Name: ActualTime
   m_TagString: Untagged
@@ -17589,22 +17596,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1901765623}
   m_CullTransparentMesh: 1
---- !u!114 &1901765627
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1901765623}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d689df3d592a67e4b8b652a0a1094c4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 1901765625}
-  timeElapsed: 0
-  minutes: 0
-  seconds: 0
 --- !u!1 &1923742769
 GameObject:
   m_ObjectHideFlags: 0

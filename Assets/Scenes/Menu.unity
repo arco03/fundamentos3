@@ -806,8 +806,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1580841297}
-        m_TargetAssemblyTypeName: Quit, Assembly-CSharp
+      - m_Target: {fileID: 1970177543}
+        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
         m_MethodName: Exit
         m_Mode: 1
         m_Arguments:
@@ -1599,6 +1599,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06c19d62363a29e4d86b3aef4d4c4ac4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameOverUI: {fileID: 0}
+  TimeUI: {fileID: 0}
+  record: {fileID: 0}
+  current: {fileID: 0}
 --- !u!4 &1970177544
 Transform:
   m_ObjectHideFlags: 0
