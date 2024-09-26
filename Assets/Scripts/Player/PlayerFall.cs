@@ -8,7 +8,7 @@ public class PlayerFall : MonoBehaviour
     {
         if(other.gameObject.CompareTag("FallCollision"))
         {
-            Debug.Log("Detectó la colision");
+            Debug.Log("DetectÃ³ la colision");
             timer.Die();
         }
     }
